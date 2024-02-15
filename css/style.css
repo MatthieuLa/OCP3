@@ -195,6 +195,11 @@ a {
   border-top-right-radius: 20px;
 }
 
+.card-txt-heberg,
+.card-rating-heberg {
+  margin-left: 1em;
+}
+
 .hebergements h2 {
   margin-bottom: 1.7em;
 }
