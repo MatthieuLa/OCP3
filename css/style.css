@@ -180,7 +180,8 @@ a {
 }
 
 .hebergements .card {
-  width: 30%;
+  width: 100%;
+  margin: 2em auto;
 }
 
 .card img {
@@ -194,6 +195,16 @@ a {
 .card-txt-heberg,
 .card-rating-heberg {
   margin-left: 1em;
+}
+
+.main-wrapper {
+  display: flex;
+  gap: 1.8em;
+}
+
+.article-wrapper {
+  flex: 1;
+  padding: 10px;
 }
 
 .hebergements h2 {
