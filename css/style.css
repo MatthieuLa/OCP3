@@ -34,6 +34,7 @@ a {
 .section-title {
   margin: 0;
   font-size: 22px;
+  margin-left: 0.5em;
 }
 
 .card {
@@ -190,6 +191,7 @@ a {
 .hebergements .card {
   width: 100%;
   margin: 2em auto;
+  height: 40%;
 }
 
 .main-wrapper .card img {
@@ -207,7 +209,8 @@ a {
 
 .main-wrapper {
   display: flex;
-  gap: 1.8em;
+  gap: 1.3em;
+  margin-right: 0.7em;
 }
 
 .article-wrapper {
@@ -217,8 +220,8 @@ a {
 
 .section-title-bottom {
   margin-top: 0;
-  margin-bottom: 0;
   margin-left: 0.5em;
+  font-size: 18px;
 }
 
 .hebergements-and-populaires section {
@@ -231,6 +234,9 @@ a {
 /****** Populaires ***********/
 .populaires {
   width: 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .populaires-title {
@@ -242,11 +248,12 @@ a {
 .populaires-cards .card {
   display: flex;
   margin-top: 33px;
+  height: 154px; /* gère la hauteur des cartes les plus populaires */
 }
 
 .populaires-cards img {
   width: 33%;
-  height: 136px;
+  height: 154px; /* gère la hauteur des images des cartes les plus populaires */
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -262,7 +269,7 @@ a {
 
 .populaires-cards .card-title {
   margin-top: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .populaires-cards .card-subtitle {
@@ -275,17 +282,36 @@ a {
 
 /* Activités */
 
+.activites {
+  margin-left: 2.16em;
+}
+
+.activites h2 {
+  margin-top: 2.8em;
+  margin-bottom: 2em;
+  margin-left: 0.5em;
+}
+
 .activites-wrapper {
   display: flex;
   gap: 1.8em;
 }
 
 .card-activites {
-  background-color: white;
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   width: 30%;
+}
+
+.card-txt {
+  background-color: white;
+  padding: 0.4em;
+  border-radius: 0 0 20px 20px;
+}
+
+.card-txt h3 {
+  margin-left: 0.8em;
 }
 
 .card-activites img {
@@ -294,6 +320,7 @@ a {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: block; /* enlève le gap de 1px entre l'img et le card-txt*/
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
