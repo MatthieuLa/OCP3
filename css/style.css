@@ -382,14 +382,19 @@ a {
   }
 
   .filters .btn-filter {
-    display: inline-block;
+    margin: 0 0.5em;
     margin-top: 0;
     top: 0;
     padding: 1em;
   }
 
+  .info-bar {
+    margin-top: 3em;
+  }
+
   #hebergements {
     width: 100%;
+    margin-bottom: 3em;
   }
 
   .main-wrapper {
@@ -418,6 +423,31 @@ a {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  .card img {
+    height: 100%;
+  }
+
+  .card-activites {
+    height: 100%;
+    font-size: 14px;
+  }
+
+  .card-activites img {
+    height: 200px;
+  }
+
+  .card-txt {
+    height: 60px;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+  }
+
+  .footer-column h3 {
+    margin-top: 1.3em;
   }
 }
 
