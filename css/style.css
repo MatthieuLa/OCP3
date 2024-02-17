@@ -364,27 +364,52 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-  #hebergements-and-populaires {
+  .hebergements-and-populaires {
     flex-direction: column;
+    display: inline; /* Permet d'aligner tout les blocs en dessous du bloc hebergements */
+  }
+
+  .main-wrapper .card img,
+  .populaires-cards img,
+  .card-activites img {
+    height: 150px;
+  }
+
+  .filters {
+    display: inline-block;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .filters .btn-filter {
+    display: inline-block;
+    margin-top: 0;
+    top: 0;
+    padding: 1em;
   }
 
   #hebergements {
     width: 100%;
   }
 
+  .main-wrapper {
+    width: 100%;
+  }
+
   .populaires {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .populaires-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+    width: 100%;
   }
 
   .populaires-cards a {
-    width: 30%;
+    width: 80%;
   }
 
   .populaires-cards .card-title {
