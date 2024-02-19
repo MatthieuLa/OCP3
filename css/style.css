@@ -378,9 +378,21 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+  .logo {
+    margin-bottom: 1em;
+  }
+
   .hebergements-and-populaires {
     flex-direction: column;
-    display: inline; /* Permet d'aligner tout les blocs en dessous du bloc hebergements */
+    width: 100%;
+  }
+
+  .hebergements-and-populaires section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 21px;
+    height: 36em;
+    box-sizing: border-box;
   }
 
   .main-wrapper .card img,
@@ -392,22 +404,23 @@ a {
   .filters {
     display: inline-block;
     width: 100%;
-    margin-top: 1em;
+    margin-bottom: 0;
+    margin-top: 0.4em;
   }
 
   .filters .btn-filter {
     margin: 0 0.5em;
-    margin-top: 0;
-    top: 0;
     padding: 1em;
   }
 
   .info-bar {
     margin-top: 3em;
+    margin-bottom: 18em;
   }
 
   #hebergements {
     width: 100%;
+    height: 100%;
     margin-bottom: 3em;
   }
 
@@ -415,10 +428,15 @@ a {
     width: 100%;
   }
 
+  .article-wrapper .card img {
+    height: 60%;
+  }
+
   .populaires {
     width: 100%;
     margin-top: 20px;
     height: 10px;
+    margin-bottom: 19em;
   }
 
   .populaires-cards {
@@ -426,6 +444,18 @@ a {
     gap: 20px;
     flex: 1;
     width: 100%;
+    margin-bottom: 0.7em;
+    margin-top: 0;
+  }
+
+  .section-title {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .section-title-bottom {
+    display: block;
+    margin-bottom: 2em;
   }
 
   .populaires-cards a {
@@ -438,6 +468,10 @@ a {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  #activites h1 {
+    margin-top: 3em;
   }
 
   .card img {
@@ -468,5 +502,88 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  #header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin: 2em 15em;
+  }
+
+  .nav-li {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 20em;
+  }
+
+  .nav-li li a {
+    width: 100%;
+  }
+
+  .nav-li li a:hover {
+    cursor: pointer;
+    color: #0065fc;
+    border-bottom: #0065fc 2px solid; /*  version mobile, la barre est en bas */
+    border-top: none;
+    padding-bottom: 20px; /* régle la hauteur de la barre bleu */
+  }
+
+  .hebergements-and-populaires {
+  }
+
+  #hebergements {
+    display: flex;
+    flex-direction: column;
+    order: 2; /* inverse la position du bloc hébergements  avec le bloc populaire*/
+    background-color: #fff; /* met le fond en blanc pour la version mobile */
+    margin-top: 0;
+    margin-bottom: 20em;
+    width: 100%;
+  }
+
+  .herbergements-find-block {
+    width: 100%;
+  }
+
+  #activites {
+    margin-top: 20em;
+  }
+
+  .activites-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* je met une width à 100% sur le wrapper parent */
+  }
+
+  .activites-wrapper .card-activites {
+    width: 315px; /* la width sur le conteneur parent me permet de pouvoir régler les cartes en largeur facilement. */
+  }
+
+  .populaires {
+    order: 1;
+    width: 100%;
+    margin-top: 23em;
+    margin-bottom: 0;
+    border-radius: none;
+  }
+
+  .populaires-title {
+    width: 100%;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
 }
