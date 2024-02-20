@@ -89,11 +89,11 @@ a {
 
 /* Bloc search */
 
-.herbergements-find-block {
+.hebergements-find-block {
   margin-top: 3.4em;
 }
 
-.herbergements-find-block p {
+.hebergements-find-block p {
   margin-bottom: 2.5em;
 }
 
@@ -461,8 +461,9 @@ a {
   }
 
   .section-title-bottom {
-    display: block;
-    margin-bottom: 2em;
+    height: 20px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
   }
 
   .populaires-cards a {
@@ -478,7 +479,7 @@ a {
   }
 
   #activites h1 {
-    margin-top: 3em;
+    margin-top: 4.5em;
   }
 
   .card img {
@@ -522,7 +523,7 @@ a {
 
   .nav-li {
     display: flex;
-    width: 375px;
+    width: 100%;
     margin: 0;
     padding: 0;
     gap: 20em;
@@ -532,12 +533,20 @@ a {
     width: 100%;
   }
 
+  .nav-li li a {
+    display: inline;
+    cursor: pointer;
+    border-bottom: hsla(0, 0%, 85%, 0.8) 2px solid; /*  version mobile, il y a une barre en bas à peine visible */
+    border-top: none;
+    padding-bottom: 17px; /* régle la hauteur de la barre bleu */
+  }
+
   .nav-li li a:hover {
     cursor: pointer;
     color: #0065fc;
     border-bottom: #0065fc 2px solid; /*  version mobile, la barre est en bas */
     border-top: none;
-    padding-bottom: 20px; /* régle la hauteur de la barre bleu */
+    padding-bottom: 17px; /* régle la hauteur de la barre bleu */
   }
 
   .search-bar {
@@ -547,7 +556,9 @@ a {
   .btn-search .loupe {
     display: block;
     color: #fff;
+    padding: 1.4px;
   }
+
   #btn-search-txt {
     display: none; /* viens cacher le texte pour ne laisser que la loupe */
   }
@@ -567,11 +578,17 @@ a {
     width: 375px;
   }
 
-  .herbergements-find-block {
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
     width: 375px;
   }
 
-  .herbergements-find-block h2 {
+  .hebergements-find-block {
+    width: 375px;
+  }
+
+  .hebergements-find-block h2 {
     line-height: 1.3em;
   }
 
