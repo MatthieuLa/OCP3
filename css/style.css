@@ -123,6 +123,13 @@ a {
   padding: 1.1em;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-search .loupe {
+  display: none;
+  color: #fff;
 }
 
 /* Bloc Search Filters */
@@ -506,6 +513,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-width: 375px;
   }
 
   .logo {
@@ -514,8 +522,7 @@ a {
 
   .nav-li {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    width: 375px;
     margin: 0;
     padding: 0;
     gap: 20em;
@@ -533,7 +540,21 @@ a {
     padding-bottom: 20px; /* régle la hauteur de la barre bleu */
   }
 
-  .hebergements-and-populaires {
+  .search-bar {
+    width: 375px;
+  }
+
+  .btn-search .loupe {
+    display: block;
+    color: #fff;
+  }
+  #btn-search-txt {
+    display: none; /* viens cacher le texte pour ne laisser que la loupe */
+  }
+  .filters button {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   #hebergements {
@@ -543,15 +564,20 @@ a {
     background-color: #fff; /* met le fond en blanc pour la version mobile */
     margin-top: 0;
     margin-bottom: 20em;
-    width: 100%;
+    width: 375px;
   }
 
   .herbergements-find-block {
-    width: 100%;
+    width: 375px;
+  }
+
+  .herbergements-find-block h2 {
+    line-height: 1.3em;
   }
 
   #activites {
     margin-top: 20em;
+    width: 375px;
   }
 
   .activites-wrapper {
@@ -564,6 +590,10 @@ a {
     width: 315px; /* la width sur le conteneur parent me permet de pouvoir régler les cartes en largeur facilement. */
   }
 
+  .activites-wrapper.card-activites img {
+    width: 100%;
+    height: 10px;
+  }
   .populaires {
     order: 1;
     width: 100%;
@@ -579,11 +609,19 @@ a {
     display: flex;
     flex-direction: column;
     gap: 0;
-    width: 100%;
+    width: 335px;
+  }
+
+  footer {
+    width: 375px;
   }
 
   .footer-wrapper {
     flex-direction: column;
-    width: 100%;
+    width: 375px;
   }
+}
+
+.footer-wrapper .footer-column {
+  width: 375px;
 }
