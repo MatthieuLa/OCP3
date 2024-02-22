@@ -305,6 +305,7 @@ a {
 #activites {
   margin-top: 4.5em;
   margin-left: 1.4em;
+  width: 100%;
 }
 
 #activites h2 {
@@ -383,36 +384,46 @@ a {
 @media (max-width: 1024px) {
   /* Header */
 
-  /* * {
-    border: 1px solid red;
-  } */
+  * {
+    /* border: 1px solid red; */
+  }
 
   html {
     width: 100%;
   }
   .logo {
     margin-bottom: 1em;
+    margin-left: 0;
   }
 
   /* Bloc recherche et filtres */
 
   .filters {
-    display: inline-block;
+    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 0;
     margin-top: 1.5em;
+    gap: 0;
+  }
+
+  .hebergements-find-block {
+    margin-left: 0;
+  }
+
+  .hebergements-find-block p {
+    margin-bottom: 1.7em;
   }
 
   .filters .btn-filter {
-    margin: 0 1em;
     padding: 1em;
-    margin-top: -10em;
-    margin-left: -0.1em;
+  }
+
+  .btn-filter-container {
+    width: 100%;
   }
 
   .info-bar {
-    margin-top: 3em;
-    margin-bottom: 18em;
+    margin-top: 2em;
   }
 
   /*  Bloc hébergements */
@@ -420,7 +431,6 @@ a {
   #hebergements {
     width: 100%;
     margin-bottom: 2.8em;
-    margin-top: 8em;
   }
 
   .main-wrapper {
@@ -434,18 +444,9 @@ a {
     height: 100%;
   }
 
-  .card-activites {
-    height: 100%;
-    font-size: 14px;
-  }
-
-  .card-txt {
-    height: 60px;
-  }
-
   .hebergements-and-populaires {
     flex-direction: column;
-    width: 100%;
+    gap: 10px;
   }
 
   .section-title-bottom {
@@ -456,17 +457,22 @@ a {
 
   .populaires {
     width: 100%;
-    margin-top: 20px;
-    height: 10px;
-    margin-bottom: 19em;
+    margin-bottom: 3em;
   }
 
   .populaires-cards {
     display: flex;
+    flex-direction: row;
     gap: 20px;
     flex: 1;
     width: 100%;
     margin-bottom: 0.7em;
+  }
+
+  .populaires-title {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
   }
 
   .section-title {
@@ -487,9 +493,26 @@ a {
 
   /* Bloc activités */
 
-  #activites h1 {
-    margin-top: 5.8em;
-    margin-bottom: 1.4em;
+  #activites {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  #activites h2 {
+    width: 100%;
+  }
+
+  .card-activites {
+    height: 100%;
+    font-size: 14px;
+  }
+
+  .card-txt {
+    height: 60px;
+  }
+
+  .card-txt h2 {
+    font-size: 14px;
   }
 
   .card-activites img {
@@ -500,6 +523,7 @@ a {
 
   .footer-wrapper {
     width: 100%;
+    margin-left: 0;
   }
 
   .footer-column h1 {
