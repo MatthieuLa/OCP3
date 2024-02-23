@@ -450,7 +450,7 @@ a {
   }
 
   .section-title-bottom {
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
 
   /* Partie populaire */
@@ -464,7 +464,6 @@ a {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    flex: 1;
     width: 100%;
     margin-bottom: 0.7em;
   }
@@ -475,8 +474,12 @@ a {
     width: 100%;
   }
 
-  .section-title {
-    margin-bottom: 0;
+  .populaires-title i {
+    margin-bottom: 0.7em;
+  }
+
+  .populaires-cards img {
+    width: 100px;
   }
 
   .populaires-cards a {
@@ -491,15 +494,17 @@ a {
     font-size: 13px;
   }
 
+  .section-title {
+    margin-bottom: 0.5em;
+  }
+
   /* Bloc activités */
 
   #activites {
+    width: 96%;
     margin-top: 0;
-    margin-left: 0;
-  }
-
-  #activites h2 {
-    width: 100%;
+    margin-left: 1em;
+    margin-bottom: 3em;
   }
 
   .card-activites {
