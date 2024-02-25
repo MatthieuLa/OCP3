@@ -313,6 +313,7 @@ a {
 }
 
 .activites-wrapper {
+  display: flex;
   gap: 1.4em;
 }
 
@@ -537,6 +538,10 @@ a {
     border: 1px solid red;
   }
 
+  body {
+    width: 100%;
+  }
+
   .main-container {
     padding: 0 20px;
   }
@@ -551,13 +556,13 @@ a {
     margin: 2em auto;
   }
 
+  nav {
+    width: 100%;
+  }
+
   .nav-li {
     gap: 5.7em;
     margin: 0;
-  }
-
-  .nav-li li a {
-    width: 10%;
   }
 
   .nav-li li a {
@@ -566,6 +571,7 @@ a {
     border-bottom: hsla(0, 0%, 85%, 0.8) 2px solid;
     border-top: none;
     padding-bottom: 17px;
+    width: 100%;
   }
 
   .nav-li li a:hover {
@@ -573,7 +579,10 @@ a {
     color: #0065fc;
     border-bottom: #0065fc 2px solid;
     border-top: none;
-    padding-bottom: 17px;
+  }
+
+  .btn-search {
+    border-radius: 10px;
   }
 
   .btn-search .loupe {
