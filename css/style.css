@@ -302,8 +302,9 @@ a {
 }
 
 .card .card-rating {
-  margin-bottom: 5px;
+  margin-bottom: 5%;
   margin-left: 2px;
+  display: inline-flex;
 }
 
 /* Activités */
@@ -339,6 +340,7 @@ a {
 .activites-wrapper .card-txt h2 {
   margin-left: 0.8em;
   font-size: 16px;
+  height: 12px;
 }
 
 .card-activites img {
@@ -676,7 +678,6 @@ a {
 
   .hebergements-find-block h1 {
     line-height: 1.3em;
-    width: 340px;
     margin-bottom: 0;
   }
 
@@ -769,9 +770,7 @@ a {
   #activites {
     flex-direction: column;
     width: 95%;
-    margin-bottom: 0;
     margin-top: 2.8em;
-    margin-left: 0.6em;
   }
 
   .activites-wrapper {
