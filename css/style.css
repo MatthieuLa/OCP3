@@ -28,6 +28,12 @@ body {
   box-sizing: border-box;
 }
 
+input::placeholder {
+  color: #000;
+  opacity: 1;
+  font-weight: bold;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -200,6 +206,7 @@ a {
 
 #hebergements .card {
   width: 30%;
+  margin-bottom: 1.7em;
 }
 
 .main-wrapper .card img {
@@ -223,14 +230,13 @@ a {
 
 .main-wrapper {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  gap: 1.5em;
   margin-top: 2em;
 }
 
 .section-title-bottom {
-  margin-top: 2em;
   margin-left: 0.5em;
   font-size: 18px;
 }
@@ -321,7 +327,7 @@ a {
   border-radius: 20px;
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  width: 30%;
+  width: 100%;
 }
 
 .card-txt {
@@ -333,7 +339,6 @@ a {
 .activites-wrapper .card-txt h2 {
   margin-left: 0.8em;
   font-size: 16px;
-  width: 100%;
 }
 
 .card-activites img {
@@ -351,7 +356,7 @@ a {
   display: flex;
   margin-top: 50px;
   background-color: var(--main-bg-color);
-  width: 1330px;
+  width: 100%;
   margin-left: 1em;
 }
 
@@ -505,6 +510,7 @@ a {
 
   #activites h2 {
     height: 26px;
+    box-sizing: border-box;
   }
 
   .card-activites {
@@ -550,7 +556,7 @@ a {
   }
 
   .main-container {
-    padding: 0 20px;
+    padding: 0;
   }
 
   /* Header */
@@ -665,6 +671,7 @@ a {
 
   .hebergements-find-block {
     margin-top: 2em;
+    margin-left: 1.3em;
   }
 
   .hebergements-find-block h1 {
@@ -692,7 +699,7 @@ a {
     margin-top: 0;
     border-radius: 0;
     padding: 0;
-    height: 600px;
+    padding-bottom: 2em;
     gap: 0;
   }
 
@@ -733,11 +740,11 @@ a {
   }
   .populaires .populaires-title {
     width: 100%;
-    margin-top: 2em;
+    box-sizing: border-box;
+    padding: 1em;
   }
 
   .section-title {
-    margin-top: 0;
     margin-bottom: 0.5em;
   }
   .populaires-cards {
@@ -763,7 +770,7 @@ a {
     flex-direction: column;
     width: 95%;
     margin-bottom: 0;
-    margin-top: 64em;
+    margin-top: 2.8em;
     margin-left: 0.6em;
   }
 
@@ -796,7 +803,7 @@ a {
 
   .section-title-bottom {
     margin-top: 1.2em;
-    margin-left: 0;
+    margin-left: 1em;
   }
 
   /* Footer */
