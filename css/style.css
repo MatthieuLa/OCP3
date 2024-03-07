@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   line-height: 1em; /* pour l'instant je m'en sers pour rapprocher le h2 et le p en dessous du logo à voir si ça ne fous pas le bordel*/
+  margin-bottom: 0;
 }
 
 .main-container {
@@ -605,7 +606,7 @@ a {
   }
 
   .search-input {
-    width: 63vw;
+    width: 62.5vw;
   }
 
   .btn-search {
@@ -646,6 +647,7 @@ a {
 
   .btn-filter-container {
     flex-wrap: wrap;
+    width: 96%;
   }
 
   .btn-filter-container .btn-filter i {
