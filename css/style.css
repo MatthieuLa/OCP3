@@ -606,7 +606,7 @@ a {
   }
 
   .search-input {
-    width: 62.5vw;
+    width: 63vw;
   }
 
   .btn-search {
@@ -647,7 +647,6 @@ a {
 
   .btn-filter-container {
     flex-wrap: wrap;
-    width: 96%;
   }
 
   .btn-filter-container .btn-filter i {
@@ -823,6 +822,6 @@ a {
   }
 
   .footer-wrapper .footer-column {
-    width: 94%;
+    width: 90%;
   }
 }
